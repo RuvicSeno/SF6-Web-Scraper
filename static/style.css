@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html, body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background: url("../static/0uqbmu72y7ka1.png") no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    overflow: auto;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(0px);  /* Blur */
+}
+
+.container {
+    position: relative;
+    max-width: 600px;
+    height: 1230px;
+    margin: auto;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid #ffcc00;
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.8);
+    animation: pulse 1.5s infinite alternate;
+    overflow-y: hidden; /* Scroll*/
+    word-wrap: break-word;
+}
+
+.title {
+    font-size: 24px;
+    color: #ff5733;
+    text-shadow: 3px 3px 10px rgba(255, 87, 51, 1);
+}
+
+.info-box {
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: left;
+    padding: 10px;
+    border-top: 2px solid #ffcc00;
+    max-height: 450px;
+    z-index: 1;
+}
+
+@keyframes pulse {
+    from { box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8); }
+    to { box-shadow: 0px 0px 25px rgba(255, 204, 0, 1); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animate-fade {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.highlight {
+    color: #6495ED; /* Blue */
+    font-weight: bold;
+}
+
+.highlight2 {
+    color: #ffcc00; /* Yellow */
+    font-weight: bold;
+}
+
+.link-style {
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+}
+
+.link-style:hover {
+    color: #ff6600; /* Orange */
+    text-decoration: underline;
+}
+
+.top-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 3px solid #ffcc00;
+    margin-bottom: 20px;
+}

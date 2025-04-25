@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Fighter 6 Info</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <h1 class="title animate-slide">{{ data.Title }}</h1>
+        <img src="{{ url_for('static', filename='l3bg7nmfPpPzam5jOVlaUFww.png') }}" alt="SF6 " class="top-image">
+        <div class="info-box animate-fade">
+            <p><span class="highlight">Release Date: </span>{{ data['Release Date'] }}</p>
+            <p><span class="highlight">Developers: </span>{{ data['Developers'] }}</p>
+            <p><span class="highlight">Publishers: </span>{{ data['Publishers'] }}</p>
+            <p><span class="highlight">Platforms: </span>{{ data['Platforms'] }}</p>
+            <p><span class="highlight2">Key Features: </span>{{ data['KeyFeatures'] }}</p>
+            <br>
+            <p><span class="highlight2">Reference: </span><a href="https://www.streetfighter.com/6/" target="_blank" class="link-style">Street Fighter 6 Fandom Wiki</a></p>
+        </div>
+    </div>
+</body>
+</html>
